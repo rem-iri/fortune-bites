@@ -1,0 +1,119 @@
+body {
+    background-color: #A670EB;
+}
+
+#getFortune {
+    width: fit-content;
+    height: 69px;
+    margin: 40px 20px;
+    padding: 40px;
+    background: linear-gradient(-90deg, #db9cff, #c869ff, #b431ff, #a200ff);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.container {
+    min-height: calc(100vh - 100px);
+}
+
+.get-fortune-text {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.category-item {
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+}
+
+.category-item>* {
+    margin: 10px;
+}
+
+.category-checkbox {
+    height: 1.25em;
+    width: 1.25em;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.fortune {
+    border-color: #8549d2;
+    box-shadow: 0px 4px 12px 0px rgb(0 0 0 / 25%);
+    animation: popup 2s;
+}
+
+footer>div {
+    text-align: center;
+}
+
+#fortunesSpinner {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+#fortunesSpinner>.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    margin: 5px;
+}
+
+/* OVERRIDES */
+
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+    background-color: #6814d6;
+}
+
+.btn-primary:hover {
+    background-color: #7e30e4;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+/* ANIMATIONS */
+
+@keyframes popup {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
